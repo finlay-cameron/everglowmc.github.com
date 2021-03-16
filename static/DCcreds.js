@@ -238,7 +238,7 @@ function getinfo(after) {
                         window.dcuser=response["username"]
                         window.location.href="/create-account#"+dcdata
                     }}})})}
-                        else {window.location.href = "https://discord.com/api/oauth2/authorize?client_id=817046480539222028&redirect_uri=https%3A%2F%2Feverglowmc.herokuapp.com%2F&response_type=token&scope=identify"}}
+                        else {window.location.href = "https://discord.com/api/oauth2/authorize?client_id=817046480539222028&redirect_uri=https%3A%2F%2Feverglowmc.github.io&response_type=code&scope=identify"}}
 
 function Updateinfo() {
 var bal = "You have e$" + window.money + "\n"
