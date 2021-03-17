@@ -1,5 +1,5 @@
 function sendDM(id, thismess){
-    const whurl = "https://discord.com/api/webhooks/818144743535149067/hytu-niZKZCMBUFSI_0QFbmj1_3rYYrR6ZCvmZyOMYNXacjK_Hm1Zn2_ZDzL5mVwZ-S4"
+    const whurl = ""
     var msg = {
         "content": id+"\n"+thismess
     }
@@ -24,8 +24,8 @@ function showFactions(){
 function getfactions(after){
     AWS.config.update({
         region: "us-east-2",
-        accessKeyId: "AKIAQMV7MQQCOJLC5FPF",
-        secretAccessKey: "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"
+        accessKeyId: "",
+        secretAccessKey: ""
     });
     var docClient = new AWS.DynamoDB.DocumentClient();
     var params = {
@@ -213,8 +213,8 @@ function getinfo(after) {
                 window.id=response["id"]
                 AWS.config.update({
                     region: "us-east-2",
-                    accessKeyId: "AKIAQMV7MQQCOJLC5FPF",
-                    secretAccessKey: "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"
+                    accessKeyId: "",
+                    secretAccessKey: ""
                 });
                 var docClient = new AWS.DynamoDB.DocumentClient();
                 var params = {
